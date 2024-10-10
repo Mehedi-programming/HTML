@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div testing</title>
+    <style>
+        table{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            /* border-collapse: collapse; doble border ke single korar joono */
+            border-spacing: 5px; /* double anar jonno */
+        }
+        td,th{
+            border: 1px solid black ;
+            padding: 5px;
+        }
+        tr{
+            text-align: center;
+        }
+        details[open] > summary{
+        background-color: rgba(0, 0, 255, 0.164);
+        }
+    </style>
+</head>
+<body>
+    <div id="div1" style="background-color:rgba(0, 128, 0, 0.044); height: 200px;width:100%;">
+        <p>This is a paragraph inside div1</p>
+
+    </div>
+    <div id="div2" style="background-color:rgba(0, 0, 255, 0.164); height: 200px;width:100%;">
+        <p>This is a paragraph inside div2</p>
+
+    </div>
+    <div id="div3" style="background-color:rgba(255, 255, 0, 0.115); height: 200px;width:100%;">
+        <p>This is a paragraph inside div3</p>
+
+    </div>
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: burlywood"/>
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">NAME</th>
+                <th scope="col">GPA</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">102</th>
+                <td>Akaib</td>
+                <td>4.90</td>
+            </tr>
+            <tr>
+                <td scope="row">103</td>
+                <td>Ashik</td>
+                <td>5.00</td>
+            </tr>
+            <tr>
+                <td scope="row">104</td>
+                <td>Anis</td>
+                <td>4.50</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <form>
+        <div>
+            <label for="fullname">Name:</label>
+            <input type="text" name="fullname" id="fullname" required><br>
+            <label for="">Phone:</label>
+            <input type="number" name="phone" required><br>
+            <label for="">Email:</label>
+            <input type="email" name="email" required><br>
+            <label for="">Password:</label>
+            <input type="password" name="password" required><br>
+            <label for="">Date of birth:</label>
+            <input type="date" name="date" id="dob" required><br>
+        </div>
+        <div>
+            <label for="">Gender:</label><br>
+            <input type="radio" name="gender" id="gender"value="male">Male</input>
+            <input type="radio" name="gender" id="gender" value="male">Female<br></input>
+        </div>
+        <div>
+            <label for="">Skill:</label><br>
+            <input type="checkbox" name="html" id="html">HTML</input><br>
+            <input type="checkbox" name="male" id="css">CSS</input><br>
+            <input type="checkbox" name="java script" id="java script">Java Script</input><br>
+            <input type="checkbox" name="python" id="python">Python</input><br>
+        </div>
+        <div>
+            <label for="">Country:</label>
+            <select name="">
+                <option value="">select your country</option>
+                <option valeue="">bangladesh</option>
+                <option valeue="">Iran</option>
+                <option valeue="">Afganistan</option>
+                <option valeue="">Pakistan</option>
+                <option valeue="">America</option>
+            </select><br>
+        <div>
+            <label for="country">Message:</label><br>
+            <textarea cols="30" rows="15"></textarea>
+        </div>
+            <input type="submit"  value="register"><br>      
+         </div>
+    </form>
+    <audio>
+        <source src="url\audio name.extention" type="audio/mpeg">
+    </audio>
+    <details>
+        <summary>summary here</summary>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione quam veniam quisquam nesciunt explicabo molestias ex dignissimos beatae laudantium alias!
+
+    </details>
+    <figure>
+        <img src="file:///C:/Users/pc/OneDrive/Pictures/pictures.webp" alt="webp">
+    </figure>
+    
+
+
+
+</body>
+</html>
